@@ -11,7 +11,7 @@
     "develop": "tsc-watch --skipLibCheck --onSuccess \"node dist/app.js\"",
     "build-ts": "tsc --skipLibCheck",
     "pretty": "prettier --check src",
-    "lint": "sh ./.ci-lwwhwd.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi; yarn pretty && eslint --max-warnings 0 --ext ts,tsx,json src",
+    "lint": "yarn pretty && eslint --max-warnings 0 --ext ts,tsx,json src",
     "postinstall": "sh ./.ci-ek7dhk.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
   },
   "dependencies": {
